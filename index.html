@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Her Out</title>
+    <style>
+      /* Combined CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffe5e5;
+      }
+      .container {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+        max-width: 500px;
+        margin: 20px;
+      }
+      .container.active {
+        display: flex;
+      }
+      .container .tenor-gif-embed {
+        max-width: 200px;
+      }
+      .btn {
+        display: flex;
+        gap: 25px;
+      }
+      .btn a {
+        text-decoration: none;
+        color: #111;
+        background: #fff;
+        padding: 10px 25px;
+        border-radius: 8px;
+        box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+      }
+      a#move-random {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page 1 (index.html) -->
+    <div id="page1" class="container active">
+      <div class="tenor-gif-embed" data-postid="20509432" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/snacks-pizza-yum-mischevious-smig-gif-20509432">Snacks Pizza GIF</a>from <a href="https://tenor.com/search/snacks-gifs">Snacks GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js">
+      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      <h1>Do you want to go for a pizza Date? 🍕 </h1>
+      <p>With your shivi batoooooo? 🤗</p>
+      <div class="btn">
+        <a href="#" onclick="showPage('yes')">Yes</a>
+        <a href="#" onclick="showPage('no1')">No</a>
+      </div>
+    </div>
+    <!-- Page 2 (no1.html) -->
+    <div id="no1" class="container">
+      <div class="tenor-gif-embed" data-postid="26908695" data-share-method="host" data-aspect-ratio="0.5625" data-width="100%"><a href="https://tenor.com/view/rajpal-yadav-rajpal-gif-26908695">Rajpal Yadav Rajpal GIF</a>from <a href="https://tenor.com/search/rajpal+yadav-gifs">Rajpal Yadav GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      <h1>Tumne Muja No bola Nehu? 😭😭</h1>
+      <p>You will not get any chocolate on birthday 😏😏</p>
+      <div class="btn">
+        <a href="#" onclick="showPage('yes')">Yes</a>
+        <a href="#" onclick="showPage('no2')">No</a>
+      </div>
+    </div>
+
+    <!-- Page 3 (no2.html) -->
+    <div id="no2" class="container">
+      <div class="tenor-gif-embed" data-postid="16435335956387921912" data-share-method="host" data-aspect-ratio="0.564257" data-width="100%"><a href="https://tenor.com/view/cool-fun-white-cat-dance-cool-and-fun-times-gif-16435335956387921912">Cool Fun GIF</a>from <a href="https://tenor.com/search/cool-gifs">Cool GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      <h1>Mrs.frowl Combination of owl and frog 🦉🐸</h1>
+      <p>koi aur nahi mila na wala tumko smaja aya 😜😜</p>
+      <div class="btn">
+        <a href="#" onclick="showPage('yes')">Yes</a>
+        <a href="#" onclick="showPage('no3')">No</a>
+      </div>
+    </div>
+
+    <!-- Page 4 (no3.html) -->
+    <div id="no3" class="container">
+     <div class="tenor-gif-embed" data-postid="24896908" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/i-win-you-lose-mochi-moc-mochi-peach-cat-gif-24896908">I Win You Lose GIF</a>from <a href="https://tenor.com/search/i+win-gifs">I Win GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      <h1>Manja na! Kitna bhav khaegi suba se khana nahi kahya 😋😋</h1>
+      <p>abe bol na himmat ha tho lagi 1 million ke bet 😎😎😎😎</p>
+      <div class="btn">
+        <a href="#" onclick="showPage('yes')">Yes</a>
+        <a href="#" id="move-random">No</a>
+      </div>
+    </div>
+
+    <!-- Page 5 (yes.html) -->
+   <!-- Page 5 (yes.html) -->
+<div id="yes" class="container">
+  <div class="tenor-gif-embed" data-postid="15773851258586710750" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/so-cute-aww-gif-15773851258586710750">So Cute GIF</a>from <a href="https://tenor.com/search/so-gifs">So GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  <h1>Hehehehe, I knew it! Abe chalo tumara salary ko plane bante ha ✈️✈️ I will be the pilot👨‍✈️👨‍✈️</h1>
+
+  <!-- Gift button -->
+  <div class="btn">
+    <a href="https://ninjahunterr1.github.io/second-page/" target="_blank">Gift</a>
+  </div>
+</div>
+
+
+    <script>
+      function showPage(page) {
+        // Hide all containers
+        document.querySelectorAll('.container').forEach(function (el) {
+          el.classList.remove('active');
+        });
+        // Show the selected container
+        document.getElementById(page).classList.add('active');
+      }
+
+      // JavaScript for moving button randomly (for "No" button on no3)
+      function moveRandomEl(elm) {
+        elm.style.position = 'absolute';
+        elm.style.top = Math.floor(Math.random() * 90 + 5) + '%';
+        elm.style.left = Math.floor(Math.random() * 90 + 5) + '%';
+      }
+
+      const moveRandom = document.getElementById('move-random');
+      if (moveRandom) {
+        moveRandom.addEventListener('mouseenter', function (e) {
+          moveRandomEl(e.target);
+        });
+      }
+    </script>
+  </body>
+</html>
